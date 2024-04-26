@@ -15,17 +15,17 @@ const Index = () => {
         </Text>
         <Input placeholder="Username" variant="filled" mb={3} type="text" />
         <Input placeholder="Password" variant="filled" mb={6} type="password" />
-        <Button leftIcon={<FaLock />} colorScheme="teal" mb={6}>
+        <Button leftIcon={<FaLock />} colorScheme="red" mb={6}>
           Login
         </Button>
         <Button leftIcon={colorMode === "light" ? <FaMoon /> : <FaSun />} onClick={toggleColorMode}>
           Toggle {colorMode === "light" ? "Dark" : "Light"}
         </Button>
         <VStack spacing={2} align="stretch" mt={4}>
-          <Button leftIcon={<FaUserShield />} colorScheme="purple">
+          <Button leftIcon={<FaUserShield />} colorScheme="red">
             Manage Roles
           </Button>
-          <Button leftIcon={<FaUserShield />} colorScheme="purple">
+          <Button leftIcon={<FaUserShield />} colorScheme="red">
             Manage Users
           </Button>
         </VStack>
